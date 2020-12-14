@@ -24,8 +24,8 @@ public class ProdutoController {
 	@Autowired
 	public ProdutoRepository repository;
 	
-	@GetMapping("/{nome}")
-	public ResponseEntity<List<Produto>> findByNomeContainingIgnoreCase(String nome){
+	@GetMapping("/nome/{nome}")
+	public ResponseEntity<List<Produto>> findByNomeContainingIgnoreCase(@PathVariable String nome){
 		return ResponseEntity.ok(repository.findAllByNomeContainingIgnoreCase(nome));
 	}
 	
