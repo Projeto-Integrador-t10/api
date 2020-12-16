@@ -1,0 +1,16 @@
+com/vendaverde/repository/UsuarioRepository.class
+com/vendaverde/security/UserDetailsServiceImpl.class
+com/vendaverde/VendaverdeApplication.class
+com/vendaverde/model/UsuarioLogin.class
+com/vendaverde/controller/UsuarioController.class
+com/vendaverde/repository/ProdutoRepository.class
+com/vendaverde/model/Categoria.class
+com/vendaverde/controller/CategoriaController.class
+com/vendaverde/security/BasicSecurityConfig.class
+com/vendaverde/security/UserDetailsImpl.class
+com/vendaverde/repository/CategoriaRepository.class
+com/vendaverde/service/UsuarioService.class
+com/vendaverde/controller/ProdutoController.class
+com/vendaverde/model/Usuario.class
+com/vendaverde/config/SwaggerConfig.class
+com/vendaverde/model/Produto.class

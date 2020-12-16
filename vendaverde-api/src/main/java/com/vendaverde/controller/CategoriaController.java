@@ -27,8 +27,8 @@ public class CategoriaController {
 	@GetMapping
 	public ResponseEntity<List<Categoria>> getAll() {
 		return ResponseEntity.ok(repository.findAll());
-	}
-
+	}	
+	
 	@GetMapping("/{id}")
 	public ResponseEntity<Categoria> getById(@PathVariable long id) {
 		return repository.findById(id).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
@@ -41,7 +41,7 @@ public class CategoriaController {
 
 	@PutMapping
 	public ResponseEntity<Categoria> put(@RequestBody Categoria categoria) {
-		return ResponseEntity.status(HttpStatus.OK).body(repository.save(categoria));
+		return ResponseEntity.ok(repository.save(categoria));
 	}
 
 	@DeleteMapping("/{id}")
