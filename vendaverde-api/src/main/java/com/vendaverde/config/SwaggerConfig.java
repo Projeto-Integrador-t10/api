@@ -15,31 +15,28 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @Configuration
 public class SwaggerConfig {
 	
-	 @Bean
-	    public Docket docket(){
-	        return new Docket(DocumentationType.SWAGGER_2)
-	                    .select()
-	                    .apis( RequestHandlerSelectors.basePackage("com.vendaverde.controller") )
-	                    .paths(PathSelectors.any())
-	                    .build()
-	                    .apiInfo(apiInfo());
-	    }
-
-	    private ApiInfo apiInfo(){
-	        return new ApiInfoBuilder()
-	                    .title("Venda Verde")
-	                    .description("API do Projeto de e-commerce realizado por alunos da turma 10 da Generation Brasil")
-	                    .version("1.0.5")
-	                    .contact(contact())
-	                    .build();
-	    }
-
-	    private Contact contact(){
-	        return new Contact("Projeto Venda Verde",
-	                "https://github.com/Projeto-Integrador-t10",
-	                "Desenvolvedores Web Full-Stack");
-	    }
-	
-	
-
+		@Bean
+		public Docket docket(){
+		    return new Docket(DocumentationType.SWAGGER_2)
+		                .select()
+		                .apis( RequestHandlerSelectors.basePackage("com.vendaverde.controller") )
+		                .paths(PathSelectors.any())
+		                .build()
+		                .apiInfo(apiInfo());
+		}
+		
+		private ApiInfo apiInfo(){
+		    return new ApiInfoBuilder()
+		                .title("Venda Verde")
+		                .description("API do Projeto de e-commerce realizado por alunos da turma 10 da Generation Brasil")
+		                .version("1.0.4")
+		                .contact(contact())
+		                .build();
+		}
+		
+		private Contact contact(){
+		    return new Contact("Projeto Venda Verde",
+		            "https://github.com/Projeto-Integrador-t10",
+		            "Desenvolvedores Web Full-Stack");
+		}
 }

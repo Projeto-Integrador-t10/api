@@ -20,7 +20,7 @@ public class Produto {
 	public long id;
 	
 	@NotNull
-	@Size(min = 1, max = 50)
+	@Size(min = 1, max = 150)
 	private String nome;
 	
 	@NotNull
@@ -31,6 +31,10 @@ public class Produto {
 	
 	@NotNull
 	private boolean estoque;
+	
+	private String imag1;
+	private String imag2;
+	private String imag3;
 	
 	private String doacao;
 	
@@ -53,4 +57,10 @@ public class Produto {
 	public void setCategoria(Categoria categoria) {this.categoria = categoria;}
 	public String getDoacao() {return doacao;}
 	public void setDoacao(String doacao) {this.doacao = doacao;}
+	public String getImag1() { return imag1;}
+	public void setImag1(String imag1) {this.imag1 = imag1;	}
+	public String getImag2() {return imag2;	}
+	public void setImag2(String imag2) {this.imag2 = imag2;	}
+	public String getImag3() {return imag3;	}
+	public void setImag3(String imag3) {this.imag3 = imag3;	}	
 }
